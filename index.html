@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- logo -->
+    <div class="logo">
+        <picture>
+            <source srcset="imagen/Logo@2x.webp" type="imagen/webp">
+            <img src="imagenes/Logo@2x.png" alt="logo">
+        </picture>
+    </div>
+    <!-- input de textos -->
+    <div class="cajas_texto">
+        <!-- mensaje -->
+        <div class="texto">
+            <input type="text" placeholder="Ingrese el texto aqui">
+            <p>Solo letras minúsculas y sin acentos</p>
+            <a class="btn_encriptar boton">Encriptar</a>
+            <a class="btn_desencriptar boton">Desencriptar</a>
+        </div>
+        <!-- encriptado -->
+        <div class="encriptado">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+    </div>
 </body>
 </html>
