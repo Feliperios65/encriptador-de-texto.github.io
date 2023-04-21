@@ -1,0 +1,31 @@
+/* globales */
+:root{
+    --dark-blue: #0A3871;
+    --blanco: #ffffff;
+    --gray: #D8DFE8;
+    --inter: 'Inter', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--inter);
+}
+img, picture{
+    max-width: 100%;
+}
+/* logo */
+.logo{
+    max-width: 12rem;
+    height: 4.8rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+/* cajas de texto */
+.textos{
+    background-color: var(--gray);
+}
