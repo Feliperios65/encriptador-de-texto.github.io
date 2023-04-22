@@ -17,17 +17,20 @@
         </picture>
     </div>
     <!-- input de textos -->
-    <div class="cajas_texto">
+    <div class="contenedor">
         <!-- mensaje -->
         <div class="texto">
-            <input type="text" placeholder="Ingrese el texto aqui">
-            <p>Solo letras minúsculas y sin acentos</p>
-            <a class="btn_encriptar boton">Encriptar</a>
-            <a class="btn_desencriptar boton">Desencriptar</a>
+            <textarea class="input_txt_normal" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="advertencia">
+                <span class="icono"></span>
+                <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <a href="#" class="btn_encriptar boton">Encriptar</a>
+            <a href="#" class="btn_desencriptar boton">Desencriptar</a>
         </div>
         <!-- encriptado -->
         <div class="encriptado">
-            <h2>Ningún mensaje fue encontrado</h2>
+            <h2 class="mensaje">Ningún mensaje fue encontrado</h2>
             <p>Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
     </div>
