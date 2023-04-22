@@ -23,9 +23,74 @@ img, picture{
     max-width: 12rem;
     height: 4.8rem;
     margin-top: 4rem;
-    margin-left: 4rem;
 }
-/* cajas de texto */
-.textos{
+/* contenedor */
+.contenedor{
+    padding: 1rem;
+}
+/* caja_texto */
+.texto{
+    /* width: 100%; */
+}
+/* input_textarea */
+.input_txt_normal{
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 20rem;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-top: 7rem;
+    outline: none;
+}
+.input_txt_normal::placeholder{
+    color: var(--dark-blue);
+}
+/* botones */
+.boton{
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    border-radius: 3rem;
+}
+.btn_encriptar{
+    background-color: var(--dark-blue);
+    color: var(--blanco);
+    margin-bottom: 2rem;
+}
+.btn_desencriptar{
+    background-color: var(--blanco);
+    border: var(--dark-blue) solid 1px;
+    color: var(--dark-blue);
+    margin-bottom: 5rem;
+}
+/* advertencia */
+.advertencia{
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+}
+.icono{
+    content: url(imagenes/error.png);
+    width: 2rem;
+    height: 2rem;
+}
+/* caja_encriptado */
+.encriptado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 7rem;
+    text-align: center;
+    height: 100%;
+    max-height: 10rem;
     background-color: var(--gray);
+}
+.mensaje{
 }
