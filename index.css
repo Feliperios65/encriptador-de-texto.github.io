@@ -28,6 +28,14 @@ img, picture{
 .contenedor{
     padding: 1rem;
 }
+/* media query contenedor Desktop */
+@media (min-width: 1200px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns:  99rem 40rem;
+        justify-content: end;
+    }
+}
 /* input_textarea */
 
 .input_txt_normal{
@@ -40,9 +48,16 @@ img, picture{
     margin-top: 7rem;
     outline: none;
 }
+/* media query textarea Tablet */
 @media (min-width: 768px){
     .input_txt_normal{
         height: 40rem;
+    }
+}
+/* media query textarea Desktop */
+@media (min-width: 1200px){
+    .input_txt_normal{
+        height: 43rem;
     }
 }
 .input_txt_normal:empty::before{
@@ -58,6 +73,7 @@ img, picture{
     flex-direction: column;
     text-align: center;
 }
+/* media query botones Tablet y Desktop */
 @media (min-width: 768px){
     .botones{
         flex-direction: row;
