@@ -122,6 +122,25 @@ img, picture{
     border-radius: 4rem;
     box-shadow: 0px 24px 21px 0px rgba(0,0,0,0.1);
 }
+/* agregando heiht minimo sol para dektop */
+@media (min-width: 1200px) {
+    .encriptado{
+        height: 62.1rem;
+    }
+}
+.txt_encriptado{
+    display: block;
+    text-align: start;
+    font-size: 2.2rem;
+    word-wrap: break-word;
+}
+/* agregando  overflow solo al dektop*/
+@media (min-height: 737.5px) {
+    .txt_encriptado{
+        overflow-y:auto;
+    }
+}
+/* media query muñeco Telefono y Tablet */
 @media (max-width: 1200px){
     .muñeco{
         display: none;
