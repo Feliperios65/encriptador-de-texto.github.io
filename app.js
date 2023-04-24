@@ -1,20 +1,18 @@
-const textarea = document.querySelector("textarea");
+const textarea = document.querySelector("textarea");//seleccionando el DOOM
 const btn_encriptar = document.querySelector(".btn_encriptar");
 const btn_desencriptar = document.querySelector(".btn_desencriptar");
+const txt_encriptado = document.querySelector(".encriptado")
 
-// comvierte lo que hay en el textarea en array
-let mensaje = textarea.value.split("")
 
-// se le asigna el vento click al boton para que itere el array
-btn_encriptar.addEventListener('click', function(){
+btn_encriptar.addEventListener('click', function(){// se le asigna el vento click al boton para que itere el array
+    txt_encriptado.classList.add('txt_encriptado')
+    let mensaje = textarea.value.split("")// comvierte lo que hay en el textarea en array
     for (let i = 0; i < mensaje.length; i++) {  
            encriptar(i);
     }
-    console.log(mensaje.join(""));
-})
+    txt_encriptado.textContent = mensaje.join("");
 
-//funcion para encriptar
-function encriptar(i){
+    function encriptar(i){    //funcion para encriptar
     switch (mensaje[i]) {
         case 'a':
             mensaje[i] = "ai";
@@ -33,5 +31,7 @@ function encriptar(i){
             break;
         default:
             break;
-    } 
-}
+        }
+    }
+})
+
