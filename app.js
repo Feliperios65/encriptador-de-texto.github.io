@@ -17,6 +17,20 @@ btn_encriptar.addEventListener('click', function(){// se le asigna el vento clic
         return rpl_5;
     }
 })
+btn_desencriptar.addEventListener('click', function(){// se le asigna el vento click al boton
+    const textarea = document.querySelector("textarea").value;//traemos el value del textarea
+    txt_encriptado.classList.add('txt_encriptado');//clase para dar estilo donde aparece el texto encriptado
+    txt_encriptado.textContent = encriptar();//imprimir en txt_encriptado el retorno de la funcion llamada
+    //funcion para encriptar
+    function encriptar(){
+        let rpl_1 = textarea.replace(/enter/g, "e")
+        let rpl_2 = rpl_1.replace(/imes/g, "i")
+        let rpl_3 = rpl_2.replace(/ai/g, "a")        //remplazar encriptado por encriptado el texto que devuelve cada replace
+        let rpl_4 = rpl_3.replace(/ober/g, "o")
+        let rpl_5 = rpl_4.replace(/ufat/g, "u")
+        return rpl_5;
+    }
+})
 // ----------------Funcion Anterior----------------
 // const textarea = document.querySelector("textarea").value.split("");// comvierte lo que hay en el textarea en array
 // textarea.forEach(function(e, i){//iteramos sobre el array mencionado anteriormente
