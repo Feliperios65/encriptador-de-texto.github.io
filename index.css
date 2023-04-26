@@ -100,6 +100,9 @@ img, picture{
     border: var(--dark-blue) solid 1px;
     color: var(--dark-blue);
 }
+.btn_copiar{
+    display: none;
+}
 /* advertencia */
 .advertencia{
     display: flex;
@@ -111,6 +114,16 @@ img, picture{
     height: 2rem;
 }
 /* caja_encriptado */
+.caja_encriptado{
+    border-radius: 4rem;
+    box-shadow: 0px 13px 5px 0px rgba(0,0,0,0.28);
+    padding: 2rem;
+}
+@media (max-width: 1200px) {
+    .caja_encriptado{
+        margin-top: 5rem;
+    }
+}
 .encriptado{
     display: flex;
     flex-direction: column;
@@ -118,16 +131,23 @@ img, picture{
     align-items: center;
     font-size: 1.3rem;
     text-align: center;
-    padding: 2rem;
-    border-radius: 4rem;
-    box-shadow: 0px 24px 21px 0px rgba(0,0,0,0.1);
 }
-/* agregando heiht minimo sol para dektop */
+/* agregando height minimo solo para dektop */
 @media (min-width: 1200px) {
     .encriptado{
+        height: 51.2rem;
+    }
+    .caja_encriptado{
         height: 62.1rem;
     }
 }
+/* media query muñeco Telefono y Tablet */
+@media (max-width: 1200px){
+    .muñeco{
+        display: none;
+    }
+}
+/* clases dadas desde javascript */
 .txt_encriptado{
     display: block;
     text-align: start;
@@ -140,9 +160,8 @@ img, picture{
         overflow-y:auto;
     }
 }
-/* media query muñeco Telefono y Tablet */
-@media (max-width: 1200px){
-    .muñeco{
-        display: none;
+@media (max-width: 1200px) {
+    #boton{
+        margin-top: 1rem;
     }
 }
